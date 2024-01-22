@@ -215,13 +215,13 @@ body {
 }
 
 .swiper__slide-1 {
-    background-image: url(/project/img/hero_1.jpg);
+    background-image: url(../img/hero_1.jpg);
 }
 .swiper__slide-2 {
-    background-image: url(/project/img/hero_2.jpg);
+    background-image: url(../img/hero_2.jpg);
 }
 .swiper__slide-3 {
-    background-image: url(/project/img/hero_3.jpg);
+    background-image: url(../img/hero_3.jpg);
 }
 
 
@@ -247,7 +247,7 @@ body {
     margin-right: auto;
     min-width: 868px;
     max-height: 622px;
-    background-image: url(/project/img/aboutus_photo-1.svg);
+    background-image: url(../img/aboutus_photo-1.svg);
     background-size: cover;
     margin-right: 32px;
 }
