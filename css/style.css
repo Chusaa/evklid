@@ -1,0 +1,583 @@
+:root {
+    --swiper-pagination-color: #FFFFFF;
+    --swiper-pagination-bullet-size: 15px;
+    --swiper-pagination-bottom: 30px;
+    --swiper-pagination-bullet-inactive-color: #FFFFFF;
+    --swiper-pagination-bullet-inactive-opacity: 0.4;
+    --swiper-pagination-bullet-horizontal-gap: 7.5px;
+    --ff: 'Montserrat';
+}
+
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+    color: black;
+}
+
+body {
+    height: 100%;
+    font-family: var(--ff);
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+}
+
+
+.container {
+    max-width: 1770px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.heading {
+    font-size: 48px;
+    line-height: normal;
+}
+
+.main {
+    padding: 0px 75px;
+}
+
+/* header */
+.header {
+    height: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 14px 75px;
+}
+
+.header__burger {
+    display: none;
+}
+
+
+.header-nav {
+    margin-left: auto;
+    margin-right: 85px;
+}
+
+.header-nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 85px;
+}
+
+.header-nav__link {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__burger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    height: 100vh;
+    background: white;
+    padding-left: 50px;
+    padding-top: 38px;
+    z-index: 100;
+    transition: transform .5s ease;
+}
+
+
+.burger__nav {
+    margin-top: 109px;
+    width: 264px;
+    margin-right: 106px;
+}
+
+.burger__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+}
+
+.burger__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.active-burger {
+    transform: translate(0%);
+}
+
+
+/* swiper */
+
+.section-hero {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    margin-bottom: 137px;
+}
+
+.hero__content {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.content__heading {
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+    max-width: 840px;
+    width: 100%;
+}
+
+.content__description {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 90px;
+    max-width: 790px;
+    width: 100%;
+}
+
+.content__button {
+    color: #FFF;
+    text-align: center;
+    font-size: 23.458px;
+    font-weight: 700;
+    line-height: normal;
+    background:#F90;
+    padding: 25px 37px;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper__slide-1 {
+    background-image: url(/project/img/hero_1.jpg);
+}
+.swiper__slide-2 {
+    background-image: url(/project/img/hero_2.jpg);
+}
+.swiper__slide-3 {
+    background-image: url(/project/img/hero_3.jpg);
+}
+
+
+
+
+/* about us */
+
+.aboutus__heading {
+    margin-bottom: 20px;
+}
+
+.aboutus__description {
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.aboutus_full-content {
+    display: flex;
+}
+
+.aboutus__left-content {
+    display: flex;
+    margin-right: auto;
+    min-width: 868px;
+    max-height: 622px;
+    background-image: url(/project/img/aboutus_photo-1.svg);
+    background-size: cover;
+    margin-right: 32px;
+}
+
+.aboutus__bottom-panel {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    margin-top: auto;
+}
+
+.aboutus__photo-description {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    max-width: 570px;
+    margin-right: 139px;
+}
+
+.aboutus__button {
+    margin-left: auto;
+    margin-right: 50px;
+    border: 3px solid #FF9900;
+    padding: 20px 28px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.block__photo {
+    margin-right: 50px;
+}
+
+.aboutus__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 116px 64px 60px;
+    border: 1px solid #CACACA;
+}
+
+.info__heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.info__description {
+    line-height: 32px;
+}
+
+.aboutus__block:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+/* how we work */
+.how-we-work {
+    margin-top: 63px;
+    margin-bottom: 100px;
+    max-height: 646px;
+}
+
+.how-we-work__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-we-work__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.how-we-work__heading {
+    margin-bottom: 50px;
+}
+
+.how-we-work__nav {
+    margin-bottom: 55px;
+}
+
+.how-we-work__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.how-we-work__btn {
+    font-size: 18px;
+    line-height: normal;
+}
+
+.how-we-work__btn:hover {
+    color: #E1670E;
+}
+
+.how-we-work__item:not(:last-child) {
+    margin-right: 85px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+.tab-content__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tab-content__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab__title {
+    margin-top: -3px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.tab__desc {
+    max-width: 758px;
+    line-height: 32px;
+}
+
+.tab__btns {
+    margin-top: auto;
+}
+
+.tab-btn__first {
+    color: #FFF;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 38px;
+    background-color: #FF9900;
+    margin-right: 32px;
+    font-size: 16px;
+}
+
+.tab-btn__second {
+    line-height: normal;
+    font-size: 16px;
+    border: 1px solid #333333;
+    padding: 20px 38px;
+}
+
+.tab__image {
+    margin-left: auto;
+    align-self: end;
+    max-width: 870px;
+    max-height: 460px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* questions - accordion */
+
+.questions__heading {
+    margin-top: 11px;
+    margin-bottom: 32px;
+}
+
+.accordion__img {
+    transform: none;
+}
+
+.is-active {
+    transform-origin: center center;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 75px 50px 74px;
+}
+
+.footer__block-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__nav-1 {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.footer__list-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__link {
+    color: #CACACA;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+
+.footer__icon-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__icon:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer__block-form-container {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    width: 100%;
+}
+
+.footer__form-heading {
+    color: #CACACA;
+    font-size: 48px;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.footer__block-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input, .message_textarea {
+    width: 100%;
+    background-color: #414141;
+    color: #FFF;
+    line-height: 32px;
+    padding: 14px 24px;
+}
+
+.message_textarea {
+    min-height: 150px;
+    color: #FFF;
+    line-height: 1.5;
+    resize: none;
+}
+
+.message_textarea::placeholder {
+    color: #CACACA;
+}
+
+.input::placeholder {
+    color: #CACACA; 
+}
+
+.form__buttons {
+    margin-top: 32px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__submit-btn {
+    padding: 19px 50px;
+    background: #FF9900;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form__check {
+    gap: 50px;
+    transform: translateY(1px);
+    border: 1px solid red;
+}
+
+.form__check-text {
+    color: #CACACA;
+    line-height: 32px;
+    margin-left: 4px;
+}
+
+.footer__block-text {
+    max-width: 363px;
+    max-height: 320px;
+    color: #CACACA;
+    line-height: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+

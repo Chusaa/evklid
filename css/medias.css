@@ -1,0 +1,236 @@
+@media (max-width: 1370px) {
+    .footer__block-text {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1250px){
+    /* header */
+    .header {
+        box-shadow: none
+    }
+    .header__logo-img {
+        width: 150px;
+        height: 48px;
+    }
+    .header-container {
+        padding: 26px 50px;
+        justify-content: space-between;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+
+    .content__heading {
+        font-size: 60px;
+        max-width: 770px;
+        width: 100%;
+    }
+    
+    .content__description {
+        font-size: 20px;
+        max-width: 660px;
+        width: 100%;
+    }
+
+
+
+  
+
+}
+
+@media (max-width: 1024px) {
+    /* section-hero-swiper */
+
+    .container {
+        max-width: 925px;
+    }
+    .main {
+        padding: 0px 50px;
+    }
+    .section-hero {
+        max-height: 668px;
+    }
+
+    .hero__content {
+        top: 160px;
+        left: 77px;
+        right: 77px;
+        bottom: 160px;
+    }
+
+    .content__heading {
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+    
+    .content__description {
+        margin-bottom: 60px;
+        text-shadow: none;
+    }
+
+
+    .footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .footer__block-form-container {
+        margin-bottom: 50px;
+    }
+
+    .footer__logo {
+        margin-bottom: 16px;
+    }
+
+    .footer__nav-1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 668px;
+    }
+
+    .header {
+        height: 69px;
+    }
+    .header-container {
+        padding: 10px 50px;
+    }
+
+    .section-hero {
+        max-height: 662px;
+    }
+
+    .hero__content {
+        top: 160px;
+        left: 40px;
+        right: 40px;
+        bottom: 160px;
+    }
+
+    .content__heading {
+        font-size: 50px;
+    }
+    
+    .content__description {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+}
+@media (max-width: 500px) {
+    /* .container {
+        max-width: 308px;
+    } */
+
+    .section-hero {
+        height: 308px;
+    }
+
+    .header-container {
+        padding: 17px 15px;
+    }
+
+
+    .hero__content {
+        align-items: center;
+        top: 60px;
+        left: 21px;
+        right: 21px;
+        bottom: 60px;
+    }
+
+    .content__heading {
+        font-size: 20px;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+    
+    .content__description {
+        font-size: 12px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .content__button {
+        font-size: 12px;
+        padding: 13px 28px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 15px;
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .footer {
+        padding: 32px 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__form-heading {
+        font-size: 24px;
+    }
+    .message_textarea::placeholder {
+        color: #CACACA;
+        font-size: 14px;
+    }
+    
+    .input::placeholder {
+        color: #CACACA;
+        font-size: 14px;
+    }
+    .footer__submit-btn {
+        padding: 12px 23px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .footer__block-form-container {
+        margin-bottom: 0px;
+    }
+    .form__buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+        margin-bottom: 14px;
+    }
+    .footer__block-menu {
+        align-items: center;
+    }
+    .footer__logo {
+        padding-top: 16px;
+        border-top: 1px solid #595959;
+    }
+
+    .footer__logo img {
+        width: 131px;
+        height: 42px;
+    }
+    .footer__icon-img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .section-hero {
+        height: 408px;
+    }
+    .header__logo-img {
+        width: 110px;
+        height: 35px;
+    }
+}
