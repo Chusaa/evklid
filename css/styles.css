@@ -100,6 +100,10 @@ body {
     display: none;
 }
 
+.bodyOver {
+    overflow-y: hidden;
+}
+
 
 .header-nav {
     margin-left: auto;
@@ -118,14 +122,18 @@ body {
     font-weight: 600;
 }
 
+.burger-close {
+    margin-left: 50px;
+}
+
 .header__burger-menu {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(-100%);
     height: 100vh;
+    width: 100vw;
     background: white;
-    padding-left: 50px;
     padding-top: 38px;
     z-index: 100;
     transition: transform .5s ease;
@@ -134,8 +142,9 @@ body {
 
 .burger__nav {
     margin-top: 109px;
-    width: 264px;
-    margin-right: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .burger__list {
@@ -458,9 +467,6 @@ body {
     transform-origin: center center;
     transform: rotate(-45deg);
 }
-
-
-
 
 
 

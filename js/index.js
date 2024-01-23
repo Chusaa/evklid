@@ -69,8 +69,19 @@ window.addEventListener("DOMContentLoaded", function() {
 
 document.querySelector(".header__burger").addEventListener("click", function() {
   document.querySelector(".header__burger-menu").classList.add("active-burger");
+
+  document.querySelector(".body").classList.add("bodyOver");
 })
 
 document.querySelector(".burger-close").addEventListener("click", function() {
   document.querySelector(".header__burger-menu").classList.remove("active-burger");
+
+  document.querySelector(".body").classList.remove("bodyOver");
+})
+
+const burgerItems = document.querySelectorAll(".burger__item").forEach(function(el) {
+  el.addEventListener("click", function() {
+    document.querySelector(".header__burger-menu").classList.remove("active-burger");
+    document.querySelector(".body").classList.remove("bodyOver");
+  })
 })
