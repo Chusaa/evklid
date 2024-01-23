@@ -229,6 +229,10 @@ body {
 
 /* about us */
 
+.section-aboutus {
+    margin-bottom: 63px;
+}
+
 .aboutus__heading {
     margin-bottom: 20px;
 }
@@ -240,23 +244,41 @@ body {
 
 .aboutus_full-content {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1770px;
+    height: 622px;
+    
 }
 
 .aboutus__left-content {
     display: flex;
-    margin-right: auto;
-    min-width: 868px;
-    max-height: 622px;
+    width: 50%;
+    height: 100%;
     background-image: url(../img/aboutus_photo-1.svg);
     background-size: cover;
+    background-position: center center;
     margin-right: 32px;
+}
+.aboutus__right-content {
+    display: flex;
+    margin-left: auto;
+    width: 49%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
 }
 
 .aboutus__bottom-panel {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: rgba(0, 0, 0, 0.50);
     width: 100%;
+    max-height: 196px;
     margin-top: auto;
 }
 
@@ -267,8 +289,6 @@ body {
     margin-top: 50px;
     margin-left: 50px;
     margin-bottom: 50px;
-    max-width: 570px;
-    margin-right: 139px;
 }
 
 .aboutus__button {
@@ -283,6 +303,7 @@ body {
     line-height: normal;
 }
 
+
 .block__photo {
     margin-right: 50px;
 }
@@ -291,8 +312,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 64px 116px 64px 60px;
+    padding: 64px 0px 64px 60px;
+    /* border: 1px solid #CACACA; */
     border: 1px solid #CACACA;
+    max-height: 295px;
+    height: 100%;
+    
 }
 
 .info__heading {
@@ -306,9 +331,6 @@ body {
     line-height: 32px;
 }
 
-.aboutus__block:not(:last-child) {
-    margin-bottom: 32px;
-}
 
 /* how we work */
 .how-we-work {
