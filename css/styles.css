@@ -51,6 +51,7 @@
 
 html {
     scroll-behavior: smooth;
+    min-width: 200px;
 }
 
 a {
@@ -239,7 +240,7 @@ body {
 /* about us */
 
 .section-aboutus {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
 }
 
 .aboutus__heading {
@@ -340,12 +341,9 @@ body {
     line-height: 32px;
 }
 
-
 /* how we work */
 .how-we-work {
-    margin-top: 63px;
     margin-bottom: 100px;
-    
 }
 
 .how-we-work__container {
@@ -380,10 +378,21 @@ body {
 .how-we-work__btn {
     font-size: 18px;
     line-height: normal;
+    background: none;
+    text-decoration: none;
 }
 
 .how-we-work__btn:hover {
     color: #E1670E;
+}
+
+.how-we-work__btn:focus {
+    outline: 2px solid #E1670E;
+    outline-offset: 2px;
+}
+
+.active-btn {
+    color: #FF9900;
 }
 
 .how-we-work__item:not(:last-child) {

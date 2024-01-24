@@ -339,6 +339,10 @@
         max-width: 470px;
     }
 
+    .section-aboutus {
+        margin-bottom: 60px;
+    }
+
 
     .section-hero {
         width: 100%;
@@ -586,14 +590,14 @@
     }
 
     .tab-btn__first {
-        padding: 15px 26px;
-        margin-right: 10px;
+        padding: 15px 16px;
+        margin-right: 5px;
         font-size: 12px;
     }
     
     .tab-btn__second {
         font-size: 12px;
-        padding: 14px 15px;
+        padding: 14px 8px;
     }
     
 }

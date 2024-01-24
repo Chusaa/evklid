@@ -79,9 +79,22 @@ document.querySelector(".burger-close").addEventListener("click", function() {
   document.querySelector(".body").classList.remove("bodyOver");
 })
 
-const burgerItems = document.querySelectorAll(".burger__item").forEach(function(el) {
+document.querySelectorAll(".burger__item").forEach(function(el) {
   el.addEventListener("click", function() {
     document.querySelector(".header__burger-menu").classList.remove("active-burger");
     document.querySelector(".body").classList.remove("bodyOver");
+  })
+})
+
+
+document.querySelectorAll(".how-we-work__btn").forEach(function(element) {
+  element.addEventListener("click", function() {
+    
+    document.querySelectorAll(".how-we-work__btn").forEach(function(el) {
+      el.classList.remove("active-btn");
+    })
+    
+
+    element.classList.add("active-btn");
   })
 })
